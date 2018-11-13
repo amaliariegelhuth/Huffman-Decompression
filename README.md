@@ -34,13 +34,13 @@ The challenging part of this problem set will be using the algs4 `BinaryIn` clas
 
 5. Create your Huffman Tree exactly as you did in Problem Set 7, using a `PriorityQueue`, merging the two lowest priority trees, etc. I just copied and pasted by code from Problem Set 7, and it worked great. Hopefully that will work for you.
 
-6. Now you have your Huffman Tree, which we will call `fullHuffmanTree`. It's time to start decoding the Huffman coded part of the file. You'll be using the `readBoolean()` method in BinaryIn to read in the file bit by bit. 
+6. Now you have your Huffman Tree, which we will call `fullHuffmanTree`. It's time to start decoding the Huffman coded part of the file. You'll be using the `readBoolean()` method in BinaryIn to read in the file bit by bit, as follows.
 
-First, open a file to write out to using the `openOutputFile()` method in `FileIOC`, which returns a `FileWriter` object, which has a `write()` method that lets you write out ints as chars to a file.
+* First, open a file to write out to using the `openOutputFile()` method in `FileIOC`, which returns a `FileWriter` object, which has a `write()` method that lets you write out ints as chars to a file.
 
-Next, create a new `HuffTree` object, which we'll call `traverseHT`, whose top pointer points at the top of `fullHuffmanTree`, which you created in step 5. You will be using `traverseHT` to traverse the Huffman tree down from its top node to the leaf nodes in order to decode the compressed text. 
+* Next, create a new `HuffTree` object, which we'll call `traverseHT`, whose top pointer points at the top of `fullHuffmanTree`, which you created in step 5. You will be using `traverseHT` to traverse the Huffman tree down from its top node to the leaf nodes in order to decode the compressed text. 
 
-Then, follow this pseudocode, more or less, to decode the remainder of the .zip file
+* Then, follow this pseudocode, more or less, to decode the remainder of the .zip file
 
 ```
 While your BinaryIn object is not empty: 
@@ -58,7 +58,7 @@ While your BinaryIn object is not empty:
 
 
 ## Testing your code.
-The output of your Puff program should be just the text of the file you compressed. For instance, if you run Huff on the `mississippi.txt` file, then use Puff to inflate your mississippi.zip file, the output file of Puff should contain the word `MISSISSIPPI`. The input to Huff should be identical to the output of Puff.
+Your Puff program should create a file that is identical to the file you compressed with your Huff program. For instance, if you run Huff on the `mississippi.txt` file, then use Puff to decompress your mississippi.zip file, the contents of the output file created by Puff should be `MISSISSIPPI`. In other words, the input to Huff should be identical to the output of Puff.
 
 ## Submitting your code
-As usual, submit your full repo to GitHub.
+As usual, submit your full repo to GitHub. Include comments, and indicate that we can grade your problem set by committing with the comment "Final version -- Please grade".
