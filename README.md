@@ -20,7 +20,7 @@ In this problem set, you will write Puff.java, the program that decompresses the
 
 You can and should use the classes you created for PS7, as well as most of the code you wrote for Step 2 of PS7, assuming you managed to get it working. If you did not get it working, email me and I will share some code with you that you can use.
 
-The challenging part of this problem set will be using the algs4 `BinaryIn` class, which allows you to read in a file bit by bit. See the [https://algs4.cs.princeton.edu/code/javadoc/edu/princeton/cs/algs4/BinaryIn.html](Javadoc for `BinaryIn`) to learn about the different ways you can read in shorts, regular old 32-bit integers, integers of specific bit lengths, and booleans. I've also given a few examples in the included `Puff.java` file.
+The challenging part of this problem set will be using the algs4 `BinaryIn` class, which allows you to read in a file bit by bit. See the [Javadoc for `BinaryIn`](https://algs4.cs.princeton.edu/code/javadoc/edu/princeton/cs/algs4/BinaryIn.html) to learn about the different ways you can read in shorts, regular old 32-bit integers, integers of specific bit lengths, and booleans. I've also given a few examples in the included `Puff.java` file.
 
 ## Puff: Decoding to decompress a file
 
@@ -54,7 +54,7 @@ While your BinaryIn object is not empty:
     set traverseHT.top to traverseHT.rightchild
 ```
     
-7. When you reach the end of the file close the `BinaryIn` object and the `FileWriter` object.
+7. When you reach the end of the file close the `FileWriter` object.
 
 
 ## Testing your code.
